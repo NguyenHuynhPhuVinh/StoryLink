@@ -20,4 +20,7 @@ class AppColors {
   static const Color textPrimary = Colors.black87;
   static const Color textSecondary = Colors.grey;
   static const Color textPlaceholder = Colors.grey;
+
+  // Status Colors
+  static const Color error = Colors.red;
 }

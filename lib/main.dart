@@ -112,7 +112,7 @@ class _MainScreenState extends State<MainScreen> {
         showUnselectedLabels: false,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.link),
+            icon: Icon(Icons.menu_book),
             label: AppStrings.storyManagement,
           ),
           BottomNavigationBarItem(

@@ -12,7 +12,7 @@ class EmptyLinkPlaceholder extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Icon(
-          Icons.link_off,
+          Icons.menu_book,
           size: AppTextSizes.iconLarge,
           color: AppColors.storyManagement,
         ),
