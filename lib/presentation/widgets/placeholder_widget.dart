@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_strings.dart';
+import '../../core/constants/app_text_sizes.dart';
 
 class PlaceholderWidget extends StatelessWidget {
   final IconData icon;
   final Color color;
   final String title;
-  
+
   const PlaceholderWidget({
     super.key,
     required this.icon,
@@ -18,27 +19,21 @@ class PlaceholderWidget extends StatelessWidget {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(
-          icon,
-          size: 80,
-          color: color,
-        ),
-        const SizedBox(height: 16),
+        Icon(icon, size: AppTextSizes.iconLarge, color: color),
+        const SizedBox(height: AppTextSizes.spacingMedium),
         Text(
           title,
-          style: TextStyle(
-            fontSize: 24,
-            fontWeight: FontWeight.bold,
+          style: Theme.of(context).textTheme.headlineSmall?.copyWith(
             color: color,
+            fontWeight: FontWeight.bold,
           ),
         ),
-        const SizedBox(height: 8),
-        const Text(
+        const SizedBox(height: AppTextSizes.spacingTiny),
+        Text(
           AppStrings.developmentInProgress,
-          style: TextStyle(
-            fontSize: 16,
-            color: Colors.grey,
-          ),
+          style: Theme.of(
+            context,
+          ).textTheme.bodyMedium?.copyWith(color: Colors.grey),
         ),
       ],
     );

@@ -3,8 +3,8 @@ import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/app_strings.dart';
 import '../../widgets/placeholder_widget.dart';
 
-class WebBrowserScreen extends StatelessWidget {
-  const WebBrowserScreen({super.key});
+class HistoryScreen extends StatelessWidget {
+  const HistoryScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,8 +16,8 @@ class WebBrowserScreen extends StatelessWidget {
       ),
       body: const Center(
         child: PlaceholderWidget(
-          icon: Icons.web,
-          color: AppColors.webBrowser,
+          icon: Icons.history,
+          color: AppColors.history,
           title: AppStrings.webBrowser,
         ),
       ),
