@@ -58,11 +58,25 @@ class _MainScreenState extends State<MainScreen> {
         },
         selectedItemColor: Theme.of(context).colorScheme.primary,
         unselectedItemColor: AppColors.grey,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.book)),
-          BottomNavigationBarItem(icon: Icon(Icons.chat)),
-          BottomNavigationBarItem(icon: Icon(Icons.web)),
-          BottomNavigationBarItem(icon: Icon(Icons.settings)),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.book),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.chat),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.web),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: '',
+          ),
         ],
       ),
     );
